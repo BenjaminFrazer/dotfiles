@@ -10,3 +10,6 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 eval $(keychain --eval --quiet)
 ZSH_THEME="agnoster"
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
+
