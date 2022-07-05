@@ -8,7 +8,7 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 3
+default_border pixel 2
 default_floating_border normal
 
 # Hide borders
@@ -156,7 +156,7 @@ set $ws8 8
 exec --no-startup-id i3-msg 'workspace 1:🗎; exec /usr/bin/emacs'
 exec --no-startup-id i3-msg 'workspace 3:🌎; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg 'workspace 2:🗀; exec /usr/bin/pcmanfm'
-exec --no-startup-id i3-msg 'workspace 2:🗀; exec /usr/bin/alacritty'
+# exec --no-startup-id i3-msg 'workspace 2:🗀; exec /usr/bin/alacritty'
 exec --no-startup-id i3-msg 'workspace 4:✉; exec /usr/bin/discord'
 exec --no-startup-id i3-msg 'workspace 4:✉; exec /usr/bin/thunderbird'
 exec i3-msg 'workspace 1:🗎'
@@ -298,7 +298,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock -killtime 20 -killer "systemctl suspend"
 exec_always --no-startup-id ff-theme-util
