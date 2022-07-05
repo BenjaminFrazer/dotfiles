@@ -11,5 +11,6 @@ fi
 eval $(keychain --eval --quiet)
 ZSH_THEME="agnoster"
 export WORKON_HOME=~/.virtualenvs
+export PATH="$HOME/bin:$PATH"
 source /usr/bin/virtualenvwrapper.sh
 
