@@ -8,8 +8,15 @@ fi
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
+
 source /home/benjaminf/.oh-my-zsh/custom/plugins/zsh-z/zsh-z.plugin.zsh
 autoload -U compinit && compinit
+
+# load bash aliases
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
+fi
+
 eval $(keychain --eval --quiet)
 ZSH_THEME="agnoster"
 export WORKON_HOME=~/.virtualenvs
