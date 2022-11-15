@@ -159,11 +159,11 @@ set $ws8 8
 
 #
 exec --no-startup-id i3-msg 'workspace 1:🗎; exec /usr/bin/emacs'
-exec --no-startup-id i3-msg 'workspace 3:🌎; exec /usr/bin/firefox'
+# exec --no-startup-id i3-msg 'workspace 3:🌎; exec firefox'
 exec --no-startup-id i3-msg 'workspace 2:🗀; exec /usr/bin/pcmanfm'
 # exec --no-startup-id i3-msg 'workspace 2:🗀; exec /usr/bin/alacritty'
 exec --no-startup-id i3-msg 'workspace 4:✉; exec /usr/bin/discord'
-exec --no-startup-id i3-msg 'workspace 4:✉; exec /usr/bin/thunderbird'
+# exec --no-startup-id i3-msg 'workspace 4:✉; exec thunderbird'
 exec i3-msg 'workspace 1:🗎'
 
 # switch to workspace
