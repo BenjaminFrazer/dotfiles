@@ -266,6 +266,9 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
+# set the max size for a floating window
+floating_maximum_size 640 x 480
+
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
