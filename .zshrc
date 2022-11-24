@@ -89,6 +89,10 @@ else
   export EDITOR='mvim'
 fi
 
+# configure virtualenv
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
+
 # source enviromental variabes
 source ~/.env
 # Compilation flags
