@@ -98,7 +98,9 @@ source $ZSH/oh-my-zsh.sh
 
 # configure virtualenv
 export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+# export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+source virtualenvwrapper.sh
 
 # source enviromental variabes
 source ~/.env
