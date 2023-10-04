@@ -7,3 +7,4 @@ alias mkscript='chmod u+x'
 # this is for pinging docker aws lambdas running on the local maching
 alias pinglambda='curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}''
 alias lo="libreoffice"
+alias python='python3'

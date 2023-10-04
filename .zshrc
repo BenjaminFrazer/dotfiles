@@ -117,6 +117,8 @@ source ~/.bash_aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 bindkey '^H' backward-kill-word
+bindkey "^k" up-line-or-beginning-search
+bindkey "^j" down-line-or-beginning-search
 prompt_context() {
         if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
 	    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
