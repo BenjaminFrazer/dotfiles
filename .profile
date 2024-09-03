@@ -1,16 +1,14 @@
-export TZ='Europe/London'
-export QT_QPA_PLATFORMTHEME="qt5ct"
-export EDITOR=/usr/bin/vim
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export PATH="$HOME/.config/emacs/bin:$PATH"
-export DOOMDIR="$HOME/.doom.d/"
-export PATH=~/scripts/:$PATH
-export PATH=~/.cargo/bin/:$PATH
+export PATH="$HOME/local/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH"
+export PATH="/opt/betaflight/betaflight-configurator:$PATH"
+export PATH="~/repos/scripts/:$PATH"
+export PATH="~/.cargo/bin/:$PATH"
+export PATH="/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:$PATH"
+export PATH="/home/benf/.platformio/penv/bin:$PATH"
 # source user enviromental variabes
 source ~/.env
 # fix "xdg-open fork-bomb" export your preferred browser from here
 eval $(ssh-agent)
-export PATH=/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:$PATH
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
