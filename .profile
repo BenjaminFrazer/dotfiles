@@ -4,7 +4,7 @@ export PATH="/opt/betaflight/betaflight-configurator:$PATH"
 export PATH="$HOME/repos/scripts/:$PATH"
 export PATH="$HOME/.cargo/bin/:$PATH"
 export PATH="/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:$PATH"
-export PATH="$HOME/benf/.platformio/penv/bin:$PATH"
+export PATH="$HOME/.platformio/penv/bin:$PATH"
 ## source user enviromental variabes
 source ~/.env
 # fix "xdg-open fork-bomb" export your preferred browser from here
@@ -15,6 +15,9 @@ if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
 	. "$HOME/.bashrc"
+    fi
+    if [ -f "$HOME/dotfiles/.bashrc" ]; then
+	. "$HOME/dotfiles/.bashrc"
     fi
 fi
 
