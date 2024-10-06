@@ -6,6 +6,12 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+fish_add_path ~/repos/scripts/
+fish_add_path ~/.cargo/bin/
+
+envsource ~/.env
+source ~/.bash_aliases
+
 function fish_user_key_bindings 
     fish_vi_key_bindings
     bind --erase --preset \ek
