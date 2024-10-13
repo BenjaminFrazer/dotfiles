@@ -1,12 +1,5 @@
-export PATH="$HOME/.config/emacs/bin:$PATH"
-export PATH="$HOME/local/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH"
-export PATH="/opt/betaflight/betaflight-configurator:$PATH"
-export PATH="$HOME/repos/scripts/:$PATH"
-export PATH="$HOME/.cargo/bin/:$PATH"
-export PATH="/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:$PATH"
-export PATH="$HOME/.platformio/penv/bin:$PATH"
-## source user enviromental variabes
-source ~/.env
+#! /bin/bash
+
 # fix "xdg-open fork-bomb" export your preferred browser from here
 eval $(ssh-agent)
 
@@ -19,14 +12,20 @@ if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/dotfiles/.bashrc" ]; then
 	. "$HOME/dotfiles/.bashrc"
     fi
+    if [ -f "$HOME/dotfiles/paths.sh" ]; then
+	. "$HOME/dotfiles/paths.sh"
+    fi
+		## source user enviromental variabes
+    if [ -f "$HOME/dotfiles/.env" ]; then
+	. "$HOME/dotfiles/.env"
+    fi
+		# set PATH so it includes user's private bin if it exists
+		if [ -d "$HOME/bin" ] ; then
+				PATH="$HOME/bin:$PATH"
+		fi
+		# set PATH so it includes user's private bin if it exists
+		if [ -d "$HOME/.local/bin" ] ; then
+				PATH="$HOME/.local/bin:$PATH"
+		fi
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
