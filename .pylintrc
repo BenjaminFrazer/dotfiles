@@ -1,0 +1,10 @@
+[MASTER]
+disable=
+    C0114, # missing-module-docstring
+    C0115, # missing class docstring
+    C0116, # missing function docstring
+    D100, # missing doctring in public module
+    D103, # missing docstring in public function
+
+[DESIGN]
+max-attributes=14

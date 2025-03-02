@@ -437,13 +437,13 @@ c.InteractiveShellApp.exec_lines.append('%autoreload 2')
 #  color codes, this capability can be turned off.
 #  Default: True
 c.InteractiveShell.color_info = True
-c.InteractiveShell.colors = 'Linux'
-c.TerminalInteractiveShell.highlighting_style = 'monokai'
+# c.InteractiveShell.colors = 'lightbg'
+c.TerminalInteractiveShell.highlighting_style = 'dracula'
 c.TerminalInteractiveShell.highlight_matching_brackets = True
 ## Set the color scheme (NoColor, Neutral, Linux, or LightBG).
 #  Choices: any of ['Neutral', 'NoColor', 'LightBG', 'Linux'] (case-insensitive)
 #  Default: 'Neutral'
-# c.InteractiveShell.colors = 'Neutral'
+c.InteractiveShell.colors = 'Linux'
 
 #  Default: False
 # c.InteractiveShell.debug = False

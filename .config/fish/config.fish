@@ -11,6 +11,7 @@ fish_add_path ~/.cargo/bin/
 
 envsource ~/.env
 source ~/.bash_aliases
+source ~/dotfiles/paths.sh
 
 function fish_user_key_bindings 
     fish_vi_key_bindings
