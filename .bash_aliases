@@ -9,6 +9,7 @@ alias pinglambda='curl -XPOST "http://localhost:9000/2015-03-31/functions/functi
 alias lo="libreoffice"
 alias python='python3'
 alias e='bash -c "nvim \"\$(fzf)\""'
+alias tms='tmux-sessionizer.sh'
 # Variants of tree
 alias t1='tree -C -L 1 --filelimit 40 --gitignore'
 alias t2='tree -C -L 2 --filelimit 40 --gitignore'
