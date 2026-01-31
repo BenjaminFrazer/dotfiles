@@ -1,3 +1,7 @@
+[env]
+XCURSOR_THEME = "Adwaita"
+XCURSOR_SIZE = "24"
+
 [colors.normal]
 black = "0x282c34"
 blue = "0x51afef"
@@ -15,8 +19,11 @@ foreground = "0xbbc2cf"
 [cursor.style]
 shape = "Block"
 
+[mouse]
+hide_when_typing = false
+
 [font]
-size = 8
+size = 16
 
 [font.bold]
 family = "Inconsolata"
