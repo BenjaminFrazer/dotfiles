@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # fix "xdg-open fork-bomb" export your preferred browser from here
-eval $(ssh-agent)
+# ssh-agent is managed by keychain in .bashrc
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
