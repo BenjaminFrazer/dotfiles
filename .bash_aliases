@@ -21,3 +21,6 @@ alias tt='tree -C -L 4 --filelimit 40 --gitignore'
 alias ttt='tree -C -L 5 --filelimit 40 --gitignore'
 alias th='tree -C -P "*.h" --prune' # list header files
 alias tc='tree -C -P "*.c" --prune' # list source files
+alias vitis_settings='source /tools/Xilinx/2025.1/Vitis/settings64.sh'
+alias vivado_settings='source /tools/Xilinx/2025.1/Vivado/settings64.sh'
+alias petalinux_settings='source ~/local/petalinux25-1/settings.sh'
