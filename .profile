@@ -9,9 +9,10 @@ if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.bashrc" ]; then
 			. "$HOME/.bashrc"
     fi
-    if [ -f "$HOME/dotfiles/.bashrc" ]; then
-			. "$HOME/dotfiles/.bashrc"
-    fi
+		# Don't run bashrc on login!
+    #if [ -f "$HOME/dotfiles/.bashrc" ]; then
+		#	. "$HOME/dotfiles/.bashrc"
+    #fi
 		## source user enviromental variabes
     if [ -f "$HOME/dotfiles/.env" ]; then
 			. "$HOME/dotfiles/.env"
