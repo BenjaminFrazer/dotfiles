@@ -1,0 +1,10 @@
+[user]
+	email = benjamin.frazer.1997@gmail.com
+	name = Ben F
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	t = log --oneline --graph --decorate -20
