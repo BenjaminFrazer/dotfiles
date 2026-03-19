@@ -7,4 +7,12 @@
 	process = git-lfs filter-process
 	required = true
 [alias]
-	t = log --oneline --graph --decorate -20
+	t = log --oneline --graph --decorate --all -40
+[safe]
+	directory = /home/gloin/repos/trs_mono-ben.f-calibration_fixed
+	directory = /home/gloin/repos/trs_mono
+	directory = /home/gloin/repos/trs_mono-origin-ben.f-fpga_dsp_interface
+	directory = /home/gloin/repos/trs_mono-origin-ben.f-fpga_dsp_interface
+	directory = /home/gloin/repos/trs_mono-origin-ben.f-fpga_dsp_interface
+[core]
+	editor = vim
