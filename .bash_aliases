@@ -24,3 +24,5 @@ alias tc='tree -C -P "*.c" --prune' # list source files
 alias vitis_settings='source /tools/Xilinx/2025.1/Vitis/settings64.sh'
 alias vivado_settings='source /tools/Xilinx/2025.1/Vivado/settings64.sh'
 alias petalinux_settings='source ~/local/petalinux25-1/settings.sh'
+alias fdg='fdfind -g'
+alias copy='wl-copy'
