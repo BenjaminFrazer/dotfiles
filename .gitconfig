@@ -1,18 +1,44 @@
 [user]
-	email = benjamin.frazer.1997@gmail.com
-	name = Ben F
+	email = Benjamin.F@cambridgeaerospace.com
+	name = Benjamin Frazer
+	signingkey = ~/.ssh/public_keys/id_ed25519_sk_rk_ca.pub
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 [alias]
-	t = log --oneline --graph --decorate --all -40
+	t = log --oneline --graph --decorate -n 60
+	sign = rebase --exec 'git commit --amend --no-edit -S' origin/main
 [safe]
-	directory = /home/gloin/repos/trs_mono-ben.f-calibration_fixed
-	directory = /home/gloin/repos/trs_mono
-	directory = /home/gloin/repos/trs_mono-origin-ben.f-fpga_dsp_interface
-	directory = /home/gloin/repos/trs_mono-origin-ben.f-fpga_dsp_interface
-	directory = /home/gloin/repos/trs_mono-origin-ben.f-fpga_dsp_interface
+	directory = ~/repos/trs_mono-ben.f-calibration_fixed
+	directory = ~/repos/trs_mono-origin-ben.f-fpga_dsp_interface
+	directory = ~/repos/trs_mono-ben.f-fpga_streaming_interface
+	directory = ~/repos/trs_mono
 [core]
 	editor = vim
+	pager = cat
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /home/gloin/.config/git/allowed_signers
+[color]
+	pager = false
+[diff]
+	tool = nvimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = nvimdiff
+[mergetool]
+	prompt = false
+[credential "https://camaero.ghe.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.camaero.ghe.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
