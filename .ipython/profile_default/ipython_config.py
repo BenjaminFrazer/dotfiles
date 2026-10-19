@@ -75,6 +75,7 @@ c.InteractiveShellApp.exec_lines.append('%autoreload 2')
 #  Choices: any of ['auto', 'agg', 'gtk', 'gtk3', 'gtk4', 'inline', 'ipympl', 'nbagg', 'notebook', 'osx', 'pdf', 'ps', 'qt', 'qt4', 'qt5', 'qt6', 'svg', 'tk', 'widget', 'wx'] (case-insensitive) or None
 #  Default: None
 # c.InteractiveShellApp.matplotlib = None
+c.InteractiveShellApp.matplotlib = 'qt'
 
 ## Run the module as a script.
 #  Default: ''
